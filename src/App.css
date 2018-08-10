@@ -1,0 +1,145 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid grey;
+  margin: 5px;
+  width: 400px;
+  box-shadow: 0 4px 6px 0 #D2D5D8;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-left: 10px; 
+}
+
+.box:hover {
+  background-color: #FEFCE8;
+}
+
+.box:hover .buttons {
+  display: flex;
+}
+
+.buttons {
+  display: none;
+  flex-direction: column-reverse;
+}
+
+#done {
+  color: rgba(52, 219, 110, 0.5);
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+#undone {
+  color: fuchsia;
+  cursor: pointer;
+  display: flex;
+}
+
+#done:hover {
+  color: rgb(52, 219, 110);
+}
+
+#del {
+  color: rgba(255, 0, 0, 0.5);
+  position: relative;
+  cursor: pointer;
+  margin: 0 5px 5px 5px;
+}
+
+#del:hover {
+  color: red;
+}
+
+.addBtn {
+  text-align: right;
+  margin: 10px;
+}
+
+#add {
+  border: 1px solid #438DDF;
+  background-color: #438DDF;
+  border-radius: 20px;
+  color: white;
+  padding: 7px;
+  cursor: pointer;
+}
+
+
+.textarea {
+  border: 1px solid #CED2D3;
+  border-radius: 5px; 
+  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.08);
+  margin: 10px;
+  width: 380px;
+  resize: none;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+.text {
+  max-width: 350px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.btnCS {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btnsave {
+  border: 1px solid #438DDF;
+  color: white;
+  background-color: #438DDF;
+  padding: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 0 10px 0 10px;
+}
+
+.cancel {
+  color: #438DDF;
+  cursor: pointer;
+  padding: 10px;
+  border:none;
+  background: none;
+}
+
+.bigField {
+  display: flex;
+  flex-direction: row;
+}
+
+#addList {
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  padding: 7px;
+  cursor: pointer;
+  height: 16px;
+  margin: 15px 5px;
+  box-shadow: 0 4px 6px 0 #D2D5D8;
+}
+
+.title {
+  font-weight: bold;
+}
+
