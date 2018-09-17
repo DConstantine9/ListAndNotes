@@ -1,31 +1,48 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import App from "./App.js";
-import Field from './FieldNote.js'
+import Sidebar from "./Sidebar"
+import FieldList from './FieldList.js'
 
 export default class BigField extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      lists = []
+      lists: []
     }
   }
 
-  newList() {
-    let list = new App()
-    this.setState( (prev) => {
-      return {list: prev.lists.push(prev.lists.length)}
-    });
+  newList(field) {
+    var arr = this.state.lists
+    arr.push(field)
+    this.setState({lists: arr})
+  }
+
+  deleteList(i) {
+    var arr = this.state.lists
+    delete arr[i]
+    this.setState({lists: arr})
   }
 
   render() {
-    return(
+    let self = this
+    return (
       <div>
-        <Field></Field>
-        <i className="fas fa-plus" id="addList" onClick={this.newList.bind(this)}></i>
+        <Sidebar />
+        <div className="BigField">
+          <div>
+            <i className="fas fa-plus" id="addList" onClick={this.newList.bind(this)}></i>
+          </div>
+          <div className="lists">
+            {this.state.lists.map((item, i) => {
+              return (
+                <FieldList key={i} index={i} deleteList={self.deleteList.bind(self)}>
+                  {item}
+                </FieldList>
+              )
+            })}
+          </div>
+        </div>
       </div>
     )
   }
-
-
 }
