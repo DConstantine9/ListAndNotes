@@ -1,0 +1,29 @@
+#wrap {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px; 
+}
+
+#pills {
+  display: flex;
+  justify-content: space-between;
+}
+
+#red {
+  border: 1px solid red;
+  border-radius: 5px; 
+  background-color: red;
+  color: white;
+  padding: 4px;
+  margin: 5px;
+  text-decoration: none
+}
+
+#blue {
+  border: 1px solid #3991FF;
+  border-radius: 5px; 
+  background-color: #3991FF;
+  color: white;
+  padding: 4px;
+  margin: 5px;
+  text-decoration: none
+}

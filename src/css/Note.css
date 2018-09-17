@@ -1,0 +1,117 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.box {
+  border: 2px solid grey;
+  border-radius: 15px; 
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 5px;
+  box-shadow: 0 4px 6px 0 #D2D5D8;
+}
+
+.boxEdit {
+  border: 2px solid grey;
+  border-radius: 15px; 
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px 0 #D2D5D8;
+  margin: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin: 3px 0 5px 0; 
+  justify-content: center;
+  align-items: center;
+}
+
+#btnlight {
+  color: rgba(128, 128, 128, 0.5);
+  margin-right: 3px; 
+}
+
+#btnlight:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+#btnred {
+  color: rgba(255, 0, 0, 0.5)
+}
+
+#btnred:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.btnSaveDiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btnsuccess {
+  border: 1px solid #438DDF;
+  color: white;
+  background-color: #438DDF;
+  padding: 10px;
+  border-radius: 2px;
+  margin: 0 7px 7px 0;
+}
+
+.text {
+  margin: 7px 7px 7px 7px;
+}
+
+.btnsuccess:hover{
+  cursor: pointer;
+}
+
+#textarea {
+  font-family: Verdana;
+  width: 280px;
+  margin: 7px;
+  border: 1px solid #CED2D3;
+  border-radius: 5px; 
+  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.08);
+  resize: none;
+}
+
+#textarea:focus {
+  outline: none;
+}
+
+#a {
+  cursor: pointer;
+  border: 1px solid #00BE19;
+  border-radius: 20px;
+  background-color: #4FCA68;
+  color: white;
+  padding: 7px;
+  box-shadow: 0 4px 6px 0 #D2D5D8;
+  margin: 7px;
+}
